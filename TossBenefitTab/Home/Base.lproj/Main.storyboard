@@ -68,6 +68,11 @@
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="414" height="120"/>
+                                        <connections>
+                                            <outlet property="descriptionLabel" destination="Hjt-Ke-lgD" id="0em-Up-RsF"/>
+                                            <outlet property="iconView" destination="6Fo-fo-u4q" id="BHX-qk-azp"/>
+                                            <outlet property="pointLabel" destination="Jlk-oU-QTa" id="rhH-Pm-BvU"/>
+                                        </connections>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TodayBenefitCell" id="J8Y-zs-XL7" customClass="TodayBenefitCell" customModule="TossBenefitTab" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="130" width="414" height="250"/>
@@ -85,7 +90,7 @@
                                                     <imageReference key="image" image="sparkles" catalog="system" renderingMode="original"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="If2-rG-P76">
-                                                    <rect key="frame" x="176.5" y="120" width="61.5" height="29"/>
+                                                    <rect key="frame" x="176.5" y="120" width="61" height="29"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -99,6 +104,9 @@
                                                     <state key="normal" title="클릭하기">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="clickedctaBtn:" destination="J8Y-zs-XL7" eventType="touchUpInside" id="soT-WG-seQ"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -112,6 +120,10 @@
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="414" height="250"/>
+                                        <connections>
+                                            <outlet property="ctaButton" destination="UMT-lE-9fh" id="QJk-xs-caM"/>
+                                            <outlet property="titleLabel" destination="If2-rG-P76" id="qo4-eT-fg5"/>
+                                        </connections>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BenefitCell" id="k2H-k8-hzV" customClass="BenefitCell" customModule="TossBenefitTab" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="390" width="414" height="128"/>
@@ -128,13 +140,13 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5yQ-20-cew">
-                                                    <rect key="frame" x="110" y="38.5" width="44" height="21.5"/>
+                                                    <rect key="frame" x="110" y="38.5" width="44" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ime-y9-hoE">
-                                                    <rect key="frame" x="110" y="65" width="47" height="21.5"/>
+                                                    <rect key="frame" x="110" y="64.5" width="47" height="22"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                     <color key="textColor" name="AccentColor"/>
                                                     <nil key="highlightedColor"/>
@@ -151,6 +163,11 @@
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="414" height="128"/>
+                                        <connections>
+                                            <outlet property="benefitImage" destination="Hzv-U9-7He" id="AbW-9j-Xz5"/>
+                                            <outlet property="descriptionLabel" destination="ime-y9-hoE" id="gya-ei-aJh"/>
+                                            <outlet property="titleLabel" destination="5yQ-20-cew" id="VrV-eD-zqK"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>

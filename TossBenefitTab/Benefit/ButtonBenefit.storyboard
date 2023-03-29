@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Button Benefit View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ButtonBenefitViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="ButtonBenefitViewController" customModule="TossBenefitTab" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="Zrl-VT-5OP">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8vd-VU-GBx">
+                                        <rect key="frame" x="20" y="748" width="353" height="60"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="vHt-0i-a2p"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="누르고 10원 받기">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="8VG-SK-Caj">
+                                        <rect key="frame" x="10" y="69" width="373" height="669"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nvs-GW-Zlt">
+                                                <rect key="frame" x="0.0" y="0.0" width="373" height="110"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="버튼을 누르면 다른 앱이 열려요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aPu-JD-G7L">
+                                                        <rect key="frame" x="10" y="8.0000000000000018" width="220.66666666666669" height="21.666666666666671"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                        <color key="textColor" white="0.32363472736176463" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="버튼을 누르기만 해도 포인트를 드려요" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GdV-5a-iGX">
+                                                        <rect key="frame" x="10" y="38" width="230" height="67"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="GdV-5a-iGX" secondAttribute="bottom" constant="5" id="3eZ-hb-8Ww"/>
+                                                    <constraint firstItem="GdV-5a-iGX" firstAttribute="leading" secondItem="aPu-JD-G7L" secondAttribute="leading" id="j8q-Ri-xqg"/>
+                                                    <constraint firstAttribute="height" constant="110" id="ySV-Lg-OhE"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ils-4n-ORJ">
+                                                <rect key="frame" x="0.0" y="110" width="373" height="559"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_button_benefit" translatesAutoresizingMaskIntoConstraints="NO" id="w6R-J6-7L6">
+                                                        <rect key="frame" x="93" y="104.66666666666669" width="187" height="350"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="350" id="O4C-cZ-eig"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="w6R-J6-7L6" firstAttribute="centerX" secondItem="Ils-4n-ORJ" secondAttribute="centerX" id="3XT-ar-FMi"/>
+                                                    <constraint firstItem="w6R-J6-7L6" firstAttribute="centerY" secondItem="Ils-4n-ORJ" secondAttribute="centerY" id="YD6-Gs-tsE"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="cvD-j6-TTV"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="cvD-j6-TTV" firstAttribute="trailing" secondItem="8VG-SK-Caj" secondAttribute="trailing" constant="10" id="7uz-U4-Wie"/>
+                                    <constraint firstItem="8VG-SK-Caj" firstAttribute="top" secondItem="cvD-j6-TTV" secondAttribute="top" constant="10" id="E2m-Nt-Zac"/>
+                                    <constraint firstItem="aPu-JD-G7L" firstAttribute="leading" secondItem="cvD-j6-TTV" secondAttribute="leading" constant="20" id="HDK-XR-yIr"/>
+                                    <constraint firstItem="8VG-SK-Caj" firstAttribute="leading" secondItem="cvD-j6-TTV" secondAttribute="leading" constant="10" id="NGV-Oh-XxX"/>
+                                    <constraint firstItem="aPu-JD-G7L" firstAttribute="top" secondItem="cvD-j6-TTV" secondAttribute="top" constant="18" id="RX2-Uz-7h5"/>
+                                    <constraint firstItem="8vd-VU-GBx" firstAttribute="leading" secondItem="cvD-j6-TTV" secondAttribute="leading" constant="20" id="bo0-F4-guR"/>
+                                    <constraint firstItem="cvD-j6-TTV" firstAttribute="trailing" secondItem="8vd-VU-GBx" secondAttribute="trailing" constant="20" id="iAc-3S-c1X"/>
+                                    <constraint firstItem="cvD-j6-TTV" firstAttribute="bottom" secondItem="8vd-VU-GBx" secondAttribute="bottom" constant="10" id="oTp-UJ-Pq7"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dY1-9s-uG1">
+                                <rect key="frame" x="20" y="748" width="353" height="60"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="uSs-dG-pda"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="누르고 10원 받기">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="dY1-9s-uG1" secondAttribute="bottom" constant="10" id="CDL-Nv-zcj"/>
+                            <constraint firstItem="dY1-9s-uG1" firstAttribute="top" secondItem="8VG-SK-Caj" secondAttribute="bottom" constant="10" id="OmQ-6W-Y8t"/>
+                            <constraint firstItem="dY1-9s-uG1" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="hun-73-v37"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="dY1-9s-uG1" secondAttribute="trailing" constant="20" id="v3J-aB-g6s"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ctaButton" destination="dY1-9s-uG1" id="rqq-58-PA3"/>
+                        <outlet property="vStackView" destination="8VG-SK-Caj" id="3bR-xV-Eqd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="64.885496183206101" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_button_benefit" width="187" height="319.33334350585938"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
