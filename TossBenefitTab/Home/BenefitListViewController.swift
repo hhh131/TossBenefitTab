@@ -78,7 +78,7 @@ class BenefitListViewController: UIViewController {
             .sink{ benefit in
                 let sb = UIStoryboard(name: "ButtonBenefit", bundle: nil)
                 let vc = sb.instantiateViewController(withIdentifier: "ButtonBenefitViewController") as! ButtonBenefitViewController
-                vc.benefit = benefit
+                vc.viewModel = ButtonBenefitViewModel(benefit: benefit)
                 self.navigationController?.pushViewController(vc, animated: true)
             }.store(in: &subscription)
         viewModel.MypointDidTapped
@@ -86,7 +86,7 @@ class BenefitListViewController: UIViewController {
             .sink{ point in
                 let sb = UIStoryboard(name: "MyPoint", bundle: nil)
                 let vc = sb.instantiateViewController(withIdentifier: "MyPointViewController") as! MyPointViewController
-                vc.point = point
+                vc.viewModel = MyPointViewModel(point: point)
                 self.navigationController?.pushViewController(vc, animated: true)
             }.store(in: &subscription)
     }
